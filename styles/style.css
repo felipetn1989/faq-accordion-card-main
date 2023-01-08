@@ -223,6 +223,7 @@ body {
 
 @media screen and (min-width: 60em) {
   .card {
+    margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-width: 52rem;
