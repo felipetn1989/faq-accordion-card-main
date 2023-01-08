@@ -4,6 +4,8 @@ let answers = document.querySelectorAll(".question__answer");
 
 let questions = document.querySelectorAll(".faq__question");
 
+/* The function toggleAnswer(i) checks if the answers[i] element is hidden or not. If it's hidden, it will show the element and do the appropriate transformations on the correspondent line  */
+
 function toggleAnswer(i) {
   if (answers[i].style.display == "block") {
     answers[i].style.display = "none";
@@ -15,6 +17,8 @@ function toggleAnswer(i) {
     questions[i].style.fontWeight = "bold";
   }
 }
+
+/* This next part of the code will check for each instance of the arrows[i] element and trigger a function when I click on the arrow. This function will call the toggleAnswer function above*/
 
 for (let i = 0; i < arrows.length; i++) {
   arrows[i].addEventListener("click", function () {
