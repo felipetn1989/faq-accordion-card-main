@@ -18,12 +18,9 @@ function toggleAnswer(i) {
   }
 }
 
-/* This next part of the code will check for each instance of the arrows[i] and questions[i] elements and trigger a function when I click on any of them. This function will call the toggleAnswer function above*/
+/* This next part of the code will check for each instance of the questions[i] element and trigger a function when I click on any of them. This function will call the toggleAnswer function above*/
 
 for (let i = 0; i < arrows.length; i++) {
-  arrows[i].addEventListener("click", function () {
-    toggleAnswer(i);
-  });
   questions[i].addEventListener("click", function () {
     toggleAnswer(i);
   });
