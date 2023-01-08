@@ -19,11 +19,14 @@
   <body>
     <main class="card">
       <div class="images">
-        <img
-          class="woman"
-          src="images/illustration-woman-online-mobile.svg"
-          alt="Drawing of a woman using a giant computer screen"
-        />
+        <picture>
+          <source media="(min-width:60em)" srcset="images/illustration-woman-online-desktop.svg">
+          <img
+            class="woman"
+            src="images/illustration-woman-online-mobile.svg"
+            alt="Drawing of a woman using a giant computer screen"
+          />
+        </picture>
         <img
           class="shadow"
           src="images/bg-pattern-mobile.svg"

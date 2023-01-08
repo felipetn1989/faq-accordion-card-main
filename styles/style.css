@@ -182,15 +182,20 @@ body {
   line-height: normal;
 }
 
+.faq__question:hover {
+  cursor: pointer;
+  color: var(--Soft-red);
+}
+
 .question__arrow {
   grid-area: two;
   place-self: start end;
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   transform: rotate(0deg);
 }
 
 .question__arrow:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .question__answer {
