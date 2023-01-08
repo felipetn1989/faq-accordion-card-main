@@ -120,6 +120,8 @@ body {
     var(--Soft-violet),
     var(--Soft-blue)
   );
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,6 +148,10 @@ body {
   transform: translate(-50%, 5rem);
 }
 
+#box {
+  display: none;
+}
+
 .shadow {
   position: relative;
   width: 15rem;
@@ -160,6 +166,7 @@ body {
   text-align: center;
   margin-top: -1rem;
   margin-bottom: 1.5rem;
+  color: var(--Very-dark-grayish-blue);
 }
 
 .faq_bloc {
@@ -202,12 +209,55 @@ body {
   grid-area: three;
   display: none;
   padding-bottom: 1rem;
+  color: var(--Dark-grayish-blue);
 }
 
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 60em) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 52rem;
+    width: 49vw;
+    background: white url("../images/bg-pattern-desktop.svg") no-repeat left
+      center/cover;
+    background-position-x: -31.5rem;
+    background-position-y: -16rem;
+    background-attachment: initial;
+    overflow: hidden;
+  }
+
+  .woman {
+    position: absolute;
+    left: -5rem;
+    top: 0;
+    width: 30rem;
+    transform: translateY(2rem);
+  }
+
+  .shadow {
+    display: none;
+  }
+
+  .text {
+    padding: 2.25rem;
+    font-size: 0.875rem;
+    place-self: center start;
+    color: var(--Dark-grayish-blue);
+  }
+
+  .text h1 {
+    text-align: left;
+    margin: unset;
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+  }
 }
