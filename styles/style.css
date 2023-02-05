@@ -219,30 +219,40 @@ body {
 }
 
 @media screen and (min-width: 60em) {
+  body {
+    justify-content: center;
+  }
+
   .card {
     margin-top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-width: 52rem;
-    width: 49vw;
+    grid-template-columns: 1fr 1.1fr;
+    width: 57.5rem;
+    height: 32rem;
     background: white url("../images/bg-pattern-desktop.svg") no-repeat left
       center/cover;
     background-position-x: -31.5rem;
     background-position-y: -16rem;
     background-attachment: initial;
-    overflow: hidden;
+    transform: translate(1rem, 1rem);
   }
 
   .woman {
     position: absolute;
-    left: -5rem;
-    top: 0;
+    left: 10rem;
+    top: -.75rem;
     width: 30rem;
-    transform: translateY(2rem);
   }
 
   .shadow {
     display: none;
+  }
+
+  #box {
+    display: block;
+    position: absolute;
+    top: 13rem;
+    left: -5.5rem;
   }
 
   .text {
@@ -250,12 +260,13 @@ body {
     font-size: 0.875rem;
     place-self: center start;
     color: var(--Dark-grayish-blue);
+    margin-top: -4.5rem;
   }
 
   .text h1 {
     text-align: left;
     margin: unset;
     margin-bottom: 2rem;
-    font-size: 2.25rem;
+    font-size: 1.9375rem;
   }
 }
