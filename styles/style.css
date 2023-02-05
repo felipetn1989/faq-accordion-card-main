@@ -270,3 +270,17 @@ body {
     font-size: 1.9375rem;
   }
 }
+
+/* Classes for JavaScript */
+
+.display {
+  display: block;
+}
+
+.rotation {
+  transform: rotate(180deg);
+}
+
+.fWeight {
+  font-weight: bold;
+}

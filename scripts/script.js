@@ -4,18 +4,19 @@ let answers = document.querySelectorAll(".question__answer");
 
 let questions = document.querySelectorAll(".faq__question");
 
-/* The function toggleAnswer(i) checks if the answers[i] element is hidden or not. If it's hidden, it will show the element and do the appropriate transformations on the correspondent line  */
+/* The function toggleAnswer(i) toggles the appropriate CSS classes for the elements that change when a menu is open  */
 
 function toggleAnswer(i) {
-  if (answers[i].style.display == "block") {
-    answers[i].style.display = "none";
-    arrows[i].style.transform = "rotate(0deg)";
-    questions[i].style.fontWeight = "normal";
-  } else {
-    answers[i].style.display = "block";
-    arrows[i].style.transform = "rotate(180deg)";
-    questions[i].style.fontWeight = "bold";
+  for (let j = 0; j < answers.length; j++) {
+    if (j != i) {
+      answers[j].classList.remove("display");
+      arrows[j].classList.remove("rotation");
+      questions[j].classList.remove("fWeight");
+    }
   }
+  answers[i].classList.toggle("display");
+  arrows[i].classList.toggle("rotation");
+  questions[i].classList.toggle("fWeight");
 }
 
 /* This next part of the code will check for each instance of the questions[i] element and trigger a function when I click on any of them. This function will call the toggleAnswer function above */
