@@ -124,20 +124,20 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 .card {
   background-color: white;
-  width: 90vw;
+  width: 20.3125rem;
   border-radius: 1rem;
   position: relative;
   text-align: left;
-  padding: 2rem 1.5rem;
-  margin-top: 8rem;
+  padding: 2rem 1.375rem;
+  margin-top: 9.25rem;
 }
 
 .woman {
@@ -162,9 +162,9 @@ body {
 
 .card h1 {
   text-transform: uppercase;
-  font-size: 1.8125rem;
+  font-size: 1.875rem;
   text-align: center;
-  margin-top: -1rem;
+  margin-top: -.625rem;
   margin-bottom: 1.5rem;
   color: var(--Very-dark-grayish-blue);
 }
@@ -172,6 +172,7 @@ body {
 .faq_bloc {
   display: grid;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .question {
@@ -180,7 +181,7 @@ body {
   grid-template-areas:
     "one two"
     "three three";
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 6fr 1fr;
 }
 
 .faq__question {
